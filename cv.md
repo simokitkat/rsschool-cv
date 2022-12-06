@@ -30,7 +30,7 @@ I'm so eager to learn more and more everyday and that's another reason why I lik
 - Markdown
 - Figma
 - TypeScript
-- Angular
+- React
 
 ---
 
