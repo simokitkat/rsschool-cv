@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- header -->
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#brief">Summary</a></li>
+                    <li><a href="#contact-info">Contacts</a></li>
+                    <li><a href="#my-skills">Skills</a></li>
+                    <li><a href="#code-examples">Code</a></li>
+                    <li><a href="#my-project">Projects</a></li>
+                    <li><a href="#bachelor-dg">Education</a></li>
+                    <li><a href="#polyglot">Languages</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!-- Landing -->
+            <section class="landing">
+                <div class="container">
+                    <div class="image">
+                        <img src="images/me.jpg" alt="my picture">
+                    </div>
+                    <div class="text">
+                        <h1>Islam Soliman</h1>
+                        <h2>Front-end Developer</h2>
+                    </div>
+                </div>
+            </section>
+            <!-- Summary -->
+            <section class="summary">
+                <div class="container">
+                    <h2 id="brief">
+                        Summary:
+                    </h2>
+                    <p>
+                        I'm a passionate junior front-end programmer who worked shortly in tourism and then worked in
+                        the
+                        customer support field in different sections (technical support, reservations and holiday
+                        bookings
+                        and financial markets), but then, <b>I discovered the wonderful world of programming &amp; web
+                            developing
+                            and decided to shift my career to front-end developing.</b>
+                    </p>
+                    <p>
+                        I'm so eager to learn more and more everyday and that's another reason why I like web
+                        developing,
+                        that you can never stop learning! I hope I'll become a full-stack developer someday.
+                    </p>
+                </div>
+            </section>
+            <!-- Contacts -->
+            <section class="contacts">
+                <div class="container">
+                    <h2 id="contact-info">Contact Information:</h2>
+                    <ul>
+                        <li><b>Phone Number:</b> <br>+375293683578</li>
+                        <li><b>Email:</b> <br><a href="mailto:simokitkat@yahoo.com">simokitkat@yahoo.com</a></li>
+                        <li><b>Github:</b> <br><a href="https://github.com/simokitkat"
+                                target="_blank">https://github.com/simokitkat</a>
+                        </li>
+                        <li><b>Linkedin:</b> <br><a href="https://www.linkedin.com/in/islamsoliman92"
+                                target="_blank">https://www.linkedin.com/in/islamsoliman92</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- Skills -->
+            <section class="skills">
+                <div class="container">
+                    <h2 id="my-skills">Skills:</h2>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Git/Github</li>
+                        <li>Markdown</li>
+                    </ul>
+                </div>
+            </section>
+            <!-- Code -->
+            <section class="code">
+                <div class="container">
+                    <h2 id="code-examples">Code example:</h2>
+                    <h3>DESCRIPTION:</h3>
+                    <p>If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9.
+                        The
+                        sum of these multiples is 23.</p>
+                    <p>Finish the solution so that it returns the sum of all the multiples of 3 or 5 below the number
+                        passed
+                        in.</p>
+                    <p>Additionally, if the number is negative, return 0 (for languages that do have them).</p>
+                    <p><b>Note:</b> If the number is a multiple of both 3 and 5, only count it once.</p>
+                    <h3><i>Solution:</i></h3>
+                    <div class="code-content">
+                        <p>
+                            <code>
+    function solution(number) { <br>
+        const arr = []; <br>
+        for (i = 3; i &lt; number; i++) { <br>
+          if (i % 3 === 0 || i % 5 === 0) { <br>
+            arr.push(i); <br>
+          } else if (number &lt; 0) { <br>
+            return 0; <br>
+          } <br>
+        } <br>
+        const arr1 = arr <br>
+          .map(function (el) { <br>
+            return el; <br>
+          }) <br>
+          .reduce(function (acc, curr) { <br>
+            return acc + curr; <br>
+          }, 0); <br>
+        return arr1; <br>
+      } <br>
+</code>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- Projects -->
+            <section class="projects">
+                <div class="container">
+                    <h2 id="my-project">Projects:</h2>
+                    <ul>
+                        <li><a href="https://simokitkat.github.io/FAQ-accordion-card/" target="_blank">FAQ accordion
+                                card</a></li>
+                        <li><a href="https://simokitkat.github.io/Interactive-rating-component/"
+                                target="_blank">Interactive rating component</a></li>
+                        <li><a href="https://simokitkat.github.io/Article-preview-component/" target="_blank">Article
+                                preview component</a></li>
+                    </ul>
+                </div>
+            </section>
+            <!-- Education -->
+            <section class="education">
+                <div class="container">
+                    <h2 id="bachelor-dg">Education:</h2>
+                    <p>Bachelor's degree from Cairo university in Archaeology</p>
+                </div>
+            </section>
+            <!-- Languages -->
+            <section class="languages">
+                <div class="container">
+                    <h2 id="polyglot">Language Skills:</h2>
+                    <ul>
+                        <li>Arabic: Native</li>
+                        <li>English: C1</li>
+                        <li>Russian: C1</li>
+                        <li>French: B1</li>
+                        <li>German: A2</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer>
+            <p><a href="https://github.com/simokitkat" target="_blank">Islam Soliman</a></p>
+            <p>&#169; DEC 2022</p>
+            <div>
+                <a href="https://rs.school/js-stage0/" target="_blank">
+                    <img src="images/logo-rsschool3.png" alt="School logo">
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

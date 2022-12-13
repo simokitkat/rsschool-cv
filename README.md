@@ -1,1 +1,1 @@
-# rsschool-cv
+<https://simokitkat.github.io/rsschool-cv/>
