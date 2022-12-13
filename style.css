@@ -284,6 +284,10 @@ nav a {
     color: white
 }
 
+.projects li {
+    margin-left: var(--main-padding-left);
+}
+
 /* Education */
 
 
